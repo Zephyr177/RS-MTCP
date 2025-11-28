@@ -1,0 +1,20 @@
+# MTCP Client Configuration
+mode = "client"
+
+[client]
+# Local listening address - applications connect here
+local_listen_ip = "127.0.0.1"
+local_listen_port = 7000
+
+# MTCP server address
+server_ip = "127.0.0.1"
+server_port = 8000
+
+# Number of TCP connections to aggregate
+connection_pool_size = 4
+
+# Buffer size for data transfer (bytes)
+buffer_size = 65536
+
+# Enable 0-RTT with pre-established connection pool
+enable_zero_rtt = true
